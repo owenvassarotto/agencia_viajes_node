@@ -1,0 +1,35 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="Imagen sección nosotros", class="img-fluid")
+
+            .col-md-7
+                h1= pagina
+                blockquote 
+                    p "El viaje enriquece el alma y amplía la mente".
+                    cite Ibn Battuta
+
+                p Somos una agencia de viajes apasionada por crear experiencias inolvidables. Nuestro objetivo es llevar a nuestros clientes en un viaje que trascienda las fronteras y enriquezca sus vidas. Desde destinos exóticos hasta aventuras locales, nos dedicamos a hacer que cada viaje sea especial y significativo.
+
+                p No se trata solo de visitar lugares, sino de sumergirse en nuevas culturas, descubrir lugares escondidos y crear recuerdos que duren toda la vida. Nuestro equipo de expertos en viajes está comprometido en hacer realidad tus sueños de viaje y proporcionarte el más alto nivel de servicio.
+
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="Icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p En nuestra agencia de viajes, la seguridad de nuestros clientes es nuestra máxima prioridad. Trabajamos arduamente para garantizar que cada experiencia de viaje sea segura y sin preocupaciones. Desde la elección de los destinos hasta la planificación de cada detalle, cuidamos de ti en cada paso del camino. 
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="Icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Explora los mejores destinos del mundo con nosotros. Ya sea que sueñes con playas paradisíacas, ciudades históricas o aventuras en la naturaleza, tenemos una amplia gama de opciones para satisfacer tus deseos de viaje. Nuestro equipo experto te guiará para que elijas la experiencia perfecta.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="Icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios 
+                    p Encontrarás los mejores precios en nuestra agencia de viajes. Creemos que todos merecen la oportunidad de explorar el mundo sin preocuparse por el presupuesto. Ofrecemos opciones asequibles sin comprometer la calidad. Disfruta de experiencias inolvidables sin romper el banco.

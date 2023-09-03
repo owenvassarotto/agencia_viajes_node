@@ -1,0 +1,36 @@
+//- para incorporar el index.pug que contiene etiqueta apertura HTML - Title - Body - etc.
+extends ./layout/index 
+
+block slider 
+    .slider     
+        h1 Río de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p En nuestra agencia de viajes, nos apasiona convertir sueños en realidades. A lo largo de los años, hemos crecido y nos enorgullece ofrecer experiencias únicas en todo el mundo.
+                p En nuestra agencia de viajes, creamos recuerdos inolvidables. Nuestro equipo de asesores de viajes está aquí para personalizar cada aventura según sus deseos, ya sea explorar destinos exóticos, descansar en playas paradisíacas o sumergirse en la riqueza cultural de nuevas ciudades. Únase a nosotros en un viaje de pasión por los viajes y descubra el mundo con nosotros.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen Nosotros Inicio", class="img-fluid")
+
+        h2.my-5.text-center Próximos Viajes
+        include ./layout/bloque_viajes
+
+    //- Sección de descuentos (same lvl of main)
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo de 2024 - 28 de Marzo de 2024
+                        p.precio $2.500 USD
+
+    //- Sección de testimoniales
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
